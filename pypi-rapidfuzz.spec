@@ -4,7 +4,7 @@
 #
 Name     : pypi-rapidfuzz
 Version  : 2.13.2
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/7a/85/b880d556130d19ac415bfaf1af9406263f7597b5b7ba062db1f532e587b9/rapidfuzz-2.13.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7a/85/b880d556130d19ac415bfaf1af9406263f7597b5b7ba062db1f532e587b9/rapidfuzz-2.13.2.tar.gz
 Summary  : rapid fuzzy string matching
@@ -84,7 +84,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1669222766
+export SOURCE_DATE_EPOCH=1669222986
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
