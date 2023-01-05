@@ -4,7 +4,7 @@
 #
 Name     : pypi-rapidfuzz
 Version  : 2.13.7
-Release  : 5
+Release  : 6
 URL      : https://files.pythonhosted.org/packages/15/e5/2ab8375be6955aff1925b69c41429cbe54e32a67461c0b59f94c9b8b1cc5/rapidfuzz-2.13.7.tar.gz
 Source0  : https://files.pythonhosted.org/packages/15/e5/2ab8375be6955aff1925b69c41429cbe54e32a67461c0b59f94c9b8b1cc5/rapidfuzz-2.13.7.tar.gz
 Summary  : rapid fuzzy string matching
