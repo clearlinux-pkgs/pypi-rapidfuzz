@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-rapidfuzz
-Version  : 3.3.0
-Release  : 15
-URL      : https://files.pythonhosted.org/packages/20/ab/f7f65cfeb2d9dda1fcf4190ccd3bfe8e4bfd4bce00375d90e20926fe7a28/rapidfuzz-3.3.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/20/ab/f7f65cfeb2d9dda1fcf4190ccd3bfe8e4bfd4bce00375d90e20926fe7a28/rapidfuzz-3.3.0.tar.gz
+Version  : 3.3.1
+Release  : 16
+URL      : https://files.pythonhosted.org/packages/1a/bc/1475cf5a75bcdfdf59b3947e9ffdfab3518629110a662c20d90b67ce037f/rapidfuzz-3.3.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/1a/bc/1475cf5a75bcdfdf59b3947e9ffdfab3518629110a662c20d90b67ce037f/rapidfuzz-3.3.1.tar.gz
 Summary  : rapid fuzzy string matching
 Group    : Development/Tools
 License  : MIT
@@ -55,10 +55,10 @@ python3 components for the pypi-rapidfuzz package.
 
 
 %prep
-%setup -q -n rapidfuzz-3.3.0
-cd %{_builddir}/rapidfuzz-3.3.0
+%setup -q -n rapidfuzz-3.3.1
+cd %{_builddir}/rapidfuzz-3.3.1
 pushd ..
-cp -a rapidfuzz-3.3.0 buildavx2
+cp -a rapidfuzz-3.3.1 buildavx2
 popd
 
 %build
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1695162376
+export SOURCE_DATE_EPOCH=1695655124
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
