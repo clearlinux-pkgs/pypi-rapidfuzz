@@ -1,5 +1,5 @@
 PKG_NAME := pypi-rapidfuzz
-URL = https://files.pythonhosted.org/packages/1a/bc/1475cf5a75bcdfdf59b3947e9ffdfab3518629110a662c20d90b67ce037f/rapidfuzz-3.3.1.tar.gz
+URL = https://files.pythonhosted.org/packages/27/36/22741bb354505ca284c2149a4c7fdee396a6cdeae3f4c0614acf6b0ee27e/rapidfuzz-3.4.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
