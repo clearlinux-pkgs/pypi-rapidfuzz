@@ -6,10 +6,10 @@
 # autospec commit: 250a666
 #
 Name     : pypi-rapidfuzz
-Version  : 3.5.1
-Release  : 20
-URL      : https://files.pythonhosted.org/packages/fa/e6/ad5adae7965c95d5f3c7882d5106f2ac175308d247152b03f4d6ff48db7e/rapidfuzz-3.5.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/fa/e6/ad5adae7965c95d5f3c7882d5106f2ac175308d247152b03f4d6ff48db7e/rapidfuzz-3.5.1.tar.gz
+Version  : 3.5.2
+Release  : 21
+URL      : https://files.pythonhosted.org/packages/8b/f3/bf5e82eca3b88853a5fe596bf8c94fb6f2775dc1b55b7bfee9de21afab03/rapidfuzz-3.5.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/8b/f3/bf5e82eca3b88853a5fe596bf8c94fb6f2775dc1b55b7bfee9de21afab03/rapidfuzz-3.5.2.tar.gz
 Summary  : rapid fuzzy string matching
 Group    : Development/Tools
 License  : MIT
@@ -57,10 +57,10 @@ python3 components for the pypi-rapidfuzz package.
 
 
 %prep
-%setup -q -n rapidfuzz-3.5.1
-cd %{_builddir}/rapidfuzz-3.5.1
+%setup -q -n rapidfuzz-3.5.2
+cd %{_builddir}/rapidfuzz-3.5.2
 pushd ..
-cp -a rapidfuzz-3.5.1 buildavx2
+cp -a rapidfuzz-3.5.2 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1698852718
+export SOURCE_DATE_EPOCH=1699022631
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
