@@ -6,10 +6,10 @@
 # autospec commit: c1050fe
 #
 Name     : pypi-rapidfuzz
-Version  : 3.6.0
-Release  : 23
-URL      : https://files.pythonhosted.org/packages/e1/79/42394ecd1b6176f2efa83ca7a32673aefbba51690e557a68cf6d49366d82/rapidfuzz-3.6.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e1/79/42394ecd1b6176f2efa83ca7a32673aefbba51690e557a68cf6d49366d82/rapidfuzz-3.6.0.tar.gz
+Version  : 3.6.1
+Release  : 24
+URL      : https://files.pythonhosted.org/packages/d4/f4/039e35e99c967100d73616ec08d4c02325f67e0d5c32a6d5a49a7f620942/rapidfuzz-3.6.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/d4/f4/039e35e99c967100d73616ec08d4c02325f67e0d5c32a6d5a49a7f620942/rapidfuzz-3.6.1.tar.gz
 Summary  : rapid fuzzy string matching
 Group    : Development/Tools
 License  : MIT
@@ -25,7 +25,7 @@ BuildRequires : pypi(setuptools)
 
 %description
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/maxbachmann/RapidFuzz/main/docs/img/RapidFuzz.svg?sanitize=true" alt="RapidFuzz" width="400">
+<img src="https://raw.githubusercontent.com/rapidfuzz/RapidFuzz/main/docs/img/RapidFuzz.svg?sanitize=true" alt="RapidFuzz" width="400">
 </h1>
 <h4 align="center">Rapid fuzzy string matching in Python and C++ using the Levenshtein Distance</h4>
 
@@ -57,10 +57,10 @@ python3 components for the pypi-rapidfuzz package.
 
 
 %prep
-%setup -q -n rapidfuzz-3.6.0
-cd %{_builddir}/rapidfuzz-3.6.0
+%setup -q -n rapidfuzz-3.6.1
+cd %{_builddir}/rapidfuzz-3.6.1
 pushd ..
-cp -a rapidfuzz-3.6.0 buildavx2
+cp -a rapidfuzz-3.6.1 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1703608270
+export SOURCE_DATE_EPOCH=1703867441
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
