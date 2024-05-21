@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : pypi-rapidfuzz
-Version  : 3.9.0
-Release  : 29
-URL      : https://files.pythonhosted.org/packages/29/91/81aeb149fdcaac4682f6003741530ceaf9a85d90dc21a01a5849acb9c2fe/rapidfuzz-3.9.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/29/91/81aeb149fdcaac4682f6003741530ceaf9a85d90dc21a01a5849acb9c2fe/rapidfuzz-3.9.0.tar.gz
+Version  : 3.9.1
+Release  : 30
+URL      : https://files.pythonhosted.org/packages/e8/94/9cf5188f6e13e58dec8a1f9f6bb201a66b42108de39ad239f6556ea7fc87/rapidfuzz-3.9.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e8/94/9cf5188f6e13e58dec8a1f9f6bb201a66b42108de39ad239f6556ea7fc87/rapidfuzz-3.9.1.tar.gz
 Summary  : rapid fuzzy string matching
 Group    : Development/Tools
 License  : MIT
@@ -57,10 +57,10 @@ python3 components for the pypi-rapidfuzz package.
 
 
 %prep
-%setup -q -n rapidfuzz-3.9.0
-cd %{_builddir}/rapidfuzz-3.9.0
+%setup -q -n rapidfuzz-3.9.1
+cd %{_builddir}/rapidfuzz-3.9.1
 pushd ..
-cp -a rapidfuzz-3.9.0 buildavx2
+cp -a rapidfuzz-3.9.1 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1714751020
+export SOURCE_DATE_EPOCH=1716264323
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -115,7 +115,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-rapidfuzz
 cp %{_builddir}/rapidfuzz-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-rapidfuzz/943137af74d8ef1313354a6a6de0a4dc3ee4df8c || :
 cp %{_builddir}/rapidfuzz-%{version}/extern/rapidfuzz-cpp/LICENSE %{buildroot}/usr/share/package-licenses/pypi-rapidfuzz/0375d56b18430f366cea90f3712664ccd180558c || :
-cp %{_builddir}/rapidfuzz-%{version}/extern/taskflow/LICENSE %{buildroot}/usr/share/package-licenses/pypi-rapidfuzz/9381ed95491683f531bb1582ca99dcd805e35bf4 || :
 python3 -m installer --destdir=%{buildroot} dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -136,7 +135,6 @@ popd
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/pypi-rapidfuzz/0375d56b18430f366cea90f3712664ccd180558c
-/usr/share/package-licenses/pypi-rapidfuzz/9381ed95491683f531bb1582ca99dcd805e35bf4
 /usr/share/package-licenses/pypi-rapidfuzz/943137af74d8ef1313354a6a6de0a4dc3ee4df8c
 
 %files python
